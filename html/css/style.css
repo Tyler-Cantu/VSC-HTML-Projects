@@ -1,0 +1,197 @@
+body, html{
+    height:100%;
+    margin:0px;
+    font-size:20px;
+    font-family:"Playfair Display", serif;
+    font-weight:400;
+    line-height:1.8em;
+  }
+
+.Drop1:hover, .Drop2:hover{
+  background-color: #66FCF1;
+}
+  .Drop1{ /*This is the drop down on the left side*/
+    background-color:#45A29E;
+    color: #000000;
+    width:25%;
+    height: 55px;
+    text-align: center;
+    font-size: 20px;
+    opacity: .7;
+    border-style: groove;
+    border-width: 8px;
+    border-color:#FFCB9A;
+    position: fixed;
+
+  }
+  .Drop2{/*This is the drop down on the right side*/
+    background-color:#45A29E;
+    color: #000000;
+    width:25%;
+    height: 55px;
+    text-align: center;
+    font-size: 20px;
+    opacity: .7;
+    border-style: groove;
+    border-width: 8px;
+    border-color:#FFCB9A;
+    position: fixed;
+    right: 0%;
+  } 
+  /* Style the tab */
+.tab1 {
+  left: 44.2%;
+  overflow: hidden;
+  position: fixed;
+  opacity: .9;
+
+}
+.tab2 {
+  left: 27%;
+  overflow: hidden;
+  position: fixed;
+  opacity: .9;
+}
+.tab3 {
+  left: 65%;
+  overflow: hidden;
+  position: fixed;
+  opacity: .9;
+}
+
+/* Style the buttons inside the tab */
+.tab1 button, .tab2 button, .tab3 button {
+  background-color:#45A29E;
+  border-color:#000000;
+  outline: none;
+  cursor: pointer;
+  padding: 9px 16px ;
+  transition: 0.3s;
+  font-size: 17px;
+  opacity: .9;
+  border-style: groove;
+  border-width: 8px;
+  border-color:#FFCB9A;
+}
+
+/* Change background color of buttons on hover */
+.tab1 button:hover {
+  background-color: #66FCF1;
+}
+.tab2 button:hover {
+  background-color: #66FCF1;
+}
+.tab3 button:hover {
+  background-color: #66FCF1;
+}
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #FFCB9A;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 10px solid #000000;
+  border-top: none;
+}
+
+  .pimg1, .pimg2, .pimg3{
+    position:relative;
+    opacity: 0.7;
+    background-position: center;
+    background-size:contain;
+    background-repeat: no-repeat;
+    z-index: -1;
+    background-attachment: fixed;
+    border: #66FCF1;
+    
+  }
+  .pimg1{
+    background-image:  url('../img/image1.jpg');
+    min-height: 75%;
+    background-color: #000000;
+    /*border-radius: 50%; this changes the shape of the image to round
+    border: #66FCF1; */ 
+    
+    
+  }
+  .pimg2{
+    background-image: url('../img/image2.jpg');
+    min-height: 400px;
+    background-color: #000000;
+    /*border-radius: 50%; this changes the shape of the image to round
+    border: #66FCF1; */ 
+    
+  }
+  .pimg3{
+    background-image: url('../img/image3.jpg');
+    min-height: 400px;
+    background-color: #000000;
+    /*border-radius: 50%; this changes the shape of the image to round
+    border: #66FCF1; */ 
+  }
+  
+  .section{
+    text-align: center;
+    padding: 50px 80px;
+  }
+  
+   .section-light{
+    background-color:#1F2833;
+    color:#66FCF1;
+    opacity: .8;
+    border-style: groove;
+    border-width: 8px;
+    border-color:#FFCB9A;
+  }
+  /*
+  .section-medium{
+    background-color:#1F2833;
+    color: #66FCF1;
+    opacity: .8;
+  }
+   
+  
+  .section-dark{
+    background-color:#1F2833;
+    color: #66FCF1;
+    opacity: .8;
+  }
+  */
+  
+  .ptext{
+    position: absolute;
+    top:50%;
+    width: 100%;
+    text-align: center;
+    color:#66FCF1 ;
+    font-size: 27px;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+  }
+  
+  .ptext .border{ /* This is adjusting the ptext that changes the background color and 
+    font color of the first and last text boxes */
+    background-color:#45A29E;
+    color: #1F2833;
+    padding:15px;
+    opacity: #000;
+    opacity:  .8;
+    font-weight: 1000;
+    border-style: groove;
+    border-width: 8px;
+    border-color:#FFCB9A;
+  }
+  
+  .ptext .border.trans{/* This is adjusting the ptext that changes the background color and 
+    font color of the 2nd and 3rd text boxes */
+    background-color:#45A29E;
+    color: #1F2833;
+    padding:20px;
+    opacity: .8;
+    border-style: groove;
+    border-width: 8px;
+    border-color:#FFCB9A;
+  }
