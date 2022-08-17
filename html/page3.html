@@ -16,11 +16,25 @@
       <div class="sb1">
         <h1><u>Services</u></h1>
         <div class="ptext1">
-          <b><p>Indoor Golf</p></b>
+          <b
+            ><p class="indoor">
+              <button id="ic" onclick="indoorChange()">Indoor Golf</button>
+            </p></b
+          >
           <br />
-          <b><p>Outdoor Golf</p></b>
+          <b
+            ><p class="outdoor">
+              <button id="oc" onclick="outdoorChange()">Outdoor Golf</button>
+            </p></b
+          >
           <br />
-          <b><p>Playground and Ball Pit (ages 3-12)</p></b>
+          <b
+            ><p class="playground">
+              <button id="pg" onclick="playGroundChange()">
+                Playground and Ball Pit (ages 3-12)
+              </button>
+            </p></b
+          >
         </div>
       </div>
       <div class="sb2">
@@ -61,5 +75,19 @@
         </div>
       </div>
     </div>
+    <script>
+      function indoorChange() {
+        document.querySelector(".indoor").innerHTML =
+          "Options for In-door are\:<ol><li> 1 game for 12$<li>2 games for 20$<li>3 games for 28$</ol>";
+      }
+      function outdoorChange() {
+        document.querySelector(".outdoor").innerHTML =
+          "Options for Out-door are \:<ol><li> 1 game for 12$<li>2 games for 20$<li>3 games for 28$</ol>";
+      }
+      function playGroundChange() {
+        document.querySelector(".playground").innerHTML =
+          "Options for Playground are \:<ol><li>1 Hour play for 5$</li><li>2 Hour play for 8$</li><li>All day play for 15$</li></ol>";
+      }
+    </script>
   </body>
 </html>
