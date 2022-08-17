@@ -10,7 +10,9 @@
 </head>
 
 <div>
-<select name="Drop down" class="Drop1" onchange="location=this.value;">
+  <!--This is the two drop down menus. Drop1 will be used to follow the link to our teams LinkedIns  -->
+  <!--Drop2 will be doing the same thing as Drop1 but will be taking users to videos  -->
+<select name="Drop down" class="Drop1" onchange="location=this.value;"> 
   <option value="">Team Members </option>
   <option value="https://www.linkedin.com/in/tylercantu">Tyler</option>
   <option value="https://www.linkedin.com/in/willis-anthony">Anthony</option>
@@ -20,14 +22,14 @@
 <select name="Drop down" class="Drop2" onchange="location=this.value;">
   <option value="">Funny Videos</option>
   <option value="https://youtu.be/du-TY1GUFGk">It is Wednesday my dudes!</option> 
-  <option value="https://youtube.com/shorts/z74-9gDhkZs?feature" target="_blank">Choking on Boba</option>
-  <option value="https://youtube.com/shorts/tEdVIAk9_3w?feature" target="_blank">Will Ferrell Rent</option>
-  <option value="https://youtube.com/shorts/TSDZQbhJCCU?feature" target="_blank">Hopping in the truck</option>
+  <option value="https://youtube.com/shorts/z74-9gDhkZs?feature">Choking on Boba</option>
+  <option value="https://youtube.com/shorts/tEdVIAk9_3w?feature">Will Ferrell Rent</option>
+  <option value="https://youtube.com/shorts/TSDZQbhJCCU?feature">Hopping in the truck</option>
 </select>
 </div>
 
 <div>
-<div class="tab1">
+<div class="tab1"><!-- We upgraded slightly from the drop down to Tabs that will open a link in a new window -->
   <form action='https://www.stmartin.edu'; target="_blank">
     <button type="submit">Saint Martin's University</button></form>
 </div>
@@ -41,12 +43,12 @@
     </div>
 </div>
 
-<body onload="alert('Welcome to our Webpage!')">
+<body onload="alert('Welcome to our Webpage!')"><!--This will alert the user when the webpage is first open  -->
 
   
-  <div class="pimg1">
-    <div class="ptext">
-      <span class="border"> 
+  <div class="pimg1"><!--This is our first image   -->
+    <div class="ptext"><!--This is our first paragraph text  -->
+      <span class="border"><!--inline container element  --> 
         <b><i>"The Universe is vast, yet we are not insignificant..."</b></i>
         <br />
         <cite>-Paul Harrison</cite>
@@ -103,7 +105,7 @@ I made them all the same with CSS anyways-->
 
 
 
-<div>
+<div><!--These will send users to the other pages in this website  -->
 <div class="page2">
   <form action="page2.html">
     <button type="submit">Page 2</button></form>
